@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Proyecto Supermercado</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalize.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+</head>
+<header id=titulo class="brand-title">
+  <div>SUPERMERCADO</div>
+</header>
+
+<body oncontextmenu="return false;" id="body"> <!--Usamos este oncontextmenu para desactivar el desplegable del boton derecho en la web-->
+  
+    
+    <div id="zonacajas">
+
+      <div type="button" id="divcaja1"  onclick="atenderClientes('poner', 'caja1')">CAJA 1<input type="hidden" id="CAJA1" value="0"><p id="mensaje1"></p></div>
+      <div type="button" id="divcaja2"  onclick="atenderClientes('poner', 'caja2')">CAJA 2<input type="hidden" id="CAJA2" value="0"><p id="mensaje2"></p></div>
+      <div type="button" id="divcaja3"  onclick="atenderClientes('poner', 'caja3')">CAJA 3<input type="hidden" id="CAJA3" value="0"><p id="mensaje3"></p></div>
+      <div type="button" id="divcaja4"  onclick="atenderClientes('poner', 'caja4')">CAJA 4<input type="hidden" id="CAJA4" value="0"><p id="mensaje4"></p></div>
+    </div>
+
+
+  </form>
+
+  <script  src="guardadoCarga.js"></script>
+  <script src="superCajas.js"></script>
+
+  <nav class="navbar"> 
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a><input type="button" id="boton_guardar" onclick="guardadoCarga.guardarDatos()" value = "Guardar"></a></li>
+        <li><a><input type="button" id="boton_recargar" onclick="guardadoCarga.cargarEstado()" value = "Cargar"></a></li>
+        <li><a href="documentacion.pdf" value="Documentacion PDF">Documentación PDF</a></li>
+        <li><a><input type="button" onclick="ocultarFondo()" value = "Borrar Fondo"></a></li>
+        <li><a><input type="button" onclick="modoNoche()" value = "Noche"></a></li>
+        <li><a href="" value="QR">QR</a></li>
+      </ul>
+    </div>
+  </nav> 
+
+</body>
+
+
+</html>

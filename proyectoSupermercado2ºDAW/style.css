@@ -1,0 +1,207 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.wrapper {
+  height: 100%;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: OCR A Std, monospace;
+  font-weight: 300;
+  font-size: 25px;
+  font-family: OCR A Std, monospace;
+  background-color: rgb(0, 91, 211);
+  border-radius: 15px;
+  border: 6px double rgb(255, 255, 255);
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.brand-title {
+  font-family: Jazz LET, fantasy;
+  font-size: 6rem;
+  font-weight: 500;
+  margin: 0.5rem;
+  text-align: center;
+  color: rgb(0, 91, 211);
+  -webkit-text-stroke: 4px rgb(255, 255, 255);
+}
+
+.navbar-links,
+[value="Guardar"],
+[value="Cargar"],
+[value="Noche"],
+[value="Borrar Fondo"] {
+  height: 100%;
+  background-color: transparent;
+  border: 6px;
+  color: rgb(255, 255, 255);
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: rgb(88, 160, 255);
+  opacity: 0.6;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+p {
+  font-size: calc(8px + 0.5vw + 0.5vh);
+}
+h1 {
+  font-size: calc(16px + 0.5vw + 0.5vh);
+}
+
+body {
+  background-image: url("super.jpg");
+  background-position: center center;
+  background-attachment: inherit;
+  background-size: cover;
+  width: 100%;
+  font-family: OCR A Std, monospace;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 400px) {
+  body {
+    background-image: url("super.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: OCR A Std, monospace;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url("super.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: OCR A Std, monospace;
+    background-repeat: no-repeat;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#zonacajas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.18em 1.18em 1.18em;
+  line-height: 1;
+  border-radius: 1em;
+  position: relative;
+  min-width: 8.23em;
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+
+#divcaja1,
+#divcaja2,
+#divcaja3,
+#divcaja4 {
+  width: 300px;
+  height: 150px;
+  background: rgb(255, 238, 4);
+  margin: 3em auto;
+  vertical-align: top;
+  text-align: center;
+  border: 4px double #ffae00;
+  border-radius: 2em;
+  color: rgb(0, 0, 0);
+}
+
+#zonaboton {
+  background-color: var(--fondozonaboton);
+  width: 25%;
+  height: 10vh;
+  margin: 5vh 1vw 5vh 1vw;
+}
+
+.oscuro {
+  background-image: none;
+  background-color: #252e2e;
+  color: #f1eded;
+}
