@@ -191,13 +191,13 @@ document.getElementById("divcaja4").oncontextmenu = function() {
         let body = document.getElementById('body'); 
         let cabecera = document.getElementById('titulo');
         cabecera.style.color = '#000000';
-        body.style.backgroundImage='url(img/noche.jpg)';
+        body.style.backgroundImage='url(noche.jpg)';
     
         
     } else {
         let cabecera = document.getElementById('titulo');
         cabecera.style.color = 'rgb(140, 0, 255)'
-        body.style.backgroundImage = 'url(img/super.jpg)';
+        body.style.backgroundImage = 'url(super.jpg)';
 
     }  
 
@@ -216,7 +216,7 @@ document.getElementById("divcaja4").oncontextmenu = function() {
 
         } else {
 
-            body.style.backgroundImage = 'url(img/super.jpg)';
+            body.style.backgroundImage = 'url(super.jpg)';
         }  
         
                    
