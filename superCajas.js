@@ -105,6 +105,7 @@ function atenderClientes(tipo_accion,numeroCaja) {
                 divcaja.style.background = "rgb(220, 20, 60)";
                 mensaje_caja.innerHTML = "<br>Caja cerrada";
             } 
+            
         
             
             
@@ -129,7 +130,7 @@ function atenderClientes(tipo_accion,numeroCaja) {
     if (total_clientes_caja == 4) {
         alert("Caja llena.");
         let fin = new Date();
-        let tiempoTranscurrido = (fin-inicio)/1000; //en milisegundos
+        let tiempoTranscurrido = (fin-inicio)/1000;
         alert('tiempo transcurrido:' + tiempoTranscurrido);
     }
 
