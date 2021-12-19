@@ -189,7 +189,7 @@ document.getElementById("divcaja4").oncontextmenu = function() {
 
         let body = document.getElementById('body'); 
         let cabecera = document.getElementById('titulo');
-        cabecera.style.color = '#ffffff';
+        cabecera.style.color = '#000000';
         body.style.backgroundImage='url(noche.jpg)';
     
         

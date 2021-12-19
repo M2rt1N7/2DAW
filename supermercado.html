@@ -10,12 +10,29 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
 </head>
-<header id=titulo class="brand-title">
-  <div>SUPERMERCADO</div>
+
+<header>
+
+  <div class="icono-menu">
+    <img src="img/open-menu.png" id="icono-menu">
+</div>
+
+<div class="cont-menu active" id="menu">
+    <ul>
+      <li><a><input type="button" id="boton_guardar" onclick="guardadoCarga.guardarDatos()" value = "Guardar"></a></li>
+      <li><a><input type="button" id="boton_recargar" onclick="guardadoCarga.cargarEstado()" value = "Cargar"></a></li>
+      <li><a href="documentacion.pdf" value="Documentacion PDF">Documentación PDF</a></li>
+      <li><a><input type="button" onclick="ocultarFondo()" value = "Borrar Fondo"></a></li>
+      <li><a><input type="button" onclick="modoNoche()" value = "Noche"></a></li>
+      <li><a href="qrcode.png" value="QR">QR</a></li>
+    </ul>
+</div>
+
+  <div id=titulo class="brand-title">SUPERMERCADO</div>
+  
 </header>
 
-<body oncontextmenu="return false;" id="body"> <!--Usamos este oncontextmenu para desactivar el desplegable del boton derecho en la web-->
-  
+<body oncontextmenu="return false;" id="body">
     
     <div id="zonacajas">
 
@@ -28,26 +45,10 @@
 
   </form>
 
+  
+<script src="app.js"></script>
   <script  src="guardadoCarga.js"></script>
   <script src="superCajas.js"></script>
-
-  <nav class="navbar"> 
-    <a href="#" class="toggle-button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-    <div class="navbar-links">
-      <ul>
-        <li><a><input type="button" id="boton_guardar" onclick="guardadoCarga.guardarDatos()" value = "Guardar"></a></li>
-        <li><a><input type="button" id="boton_recargar" onclick="guardadoCarga.cargarEstado()" value = "Cargar"></a></li>
-        <li><a href="documentacion.pdf" value="Documentacion PDF">Documentación PDF</a></li>
-        <li><a><input type="button" onclick="ocultarFondo()" value = "Borrar Fondo"></a></li>
-        <li><a><input type="button" onclick="modoNoche()" value = "Noche"></a></li>
-        <li><a href="qrSupermercado.pdf" value="QR">QR</a></li>
-      </ul>
-    </div>
-  </nav> 
 
 </body>
 

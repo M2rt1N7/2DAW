@@ -8,22 +8,6 @@
   background-color: white;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: OCR A Std, monospace;
-  font-weight: 300;
-  font-size: 25px;
-  font-family: OCR A Std, monospace;
-  background-color: rgb(0, 91, 211);
-  border-radius: 15px;
-  border: 6px double rgb(255, 255, 255);
-  text-align: center;
-  margin: 0 auto;
-  width: 60%;
-}
-
 .brand-title {
   font-family: Jazz LET, fantasy;
   font-size: 6rem;
@@ -43,58 +27,30 @@
   background-color: transparent;
   border: 6px;
   color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 .navbar-links ul {
   display: flex;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .navbar-links li {
   list-style: none;
+  text-align: center;
 }
 
 .navbar-links li a {
+  text-align: center;
   display: block;
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding: 1rem;
 }
 
-.navbar-links li:hover {
-  background-color: rgb(88, 160, 255);
-  opacity: 0.6;
-}
-
-.toggle-button {
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-}
-
 @media (max-width: 800px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .toggle-button {
-    display: flex;
-  }
-
   .navbar-links {
     display: none;
     width: 100%;
@@ -128,14 +84,13 @@ h1 {
 body {
   background-image: url("super.jpg");
   background-position: center center;
-  background-attachment: inherit;
+  background-attachment: fixed;
   background-size: cover;
-  width: 100%;
   font-family: OCR A Std, monospace;
   background-repeat: no-repeat;
 }
 
-@media (min-width: 400px) {
+@media (max-width: 400px) {
   body {
     background-image: url("super.jpg");
     background-position: center center;
@@ -144,9 +99,32 @@ body {
     font-family: OCR A Std, monospace;
     background-repeat: no-repeat;
   }
+
+  .brand-title {
+    font-size: 3rem;
+    margin: 0 auto;
+    color: rgb(0, 91, 211);
+    -webkit-text-stroke: 4px rgb(255, 255, 255);
+    max-width: 80%;
+  }
+
+  #zonacajas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.1em 1.18em 1.18em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-size: 1.35rem;
+    position: inherit;
+  }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   body {
     background-image: url("super.jpg");
     background-position: center center;
@@ -154,6 +132,13 @@ body {
     background-size: cover;
     font-family: OCR A Std, monospace;
     background-repeat: no-repeat;
+  }
+  .brand-title {
+    font-size: 3rem;
+    margin: 0 auto;
+    color: rgb(0, 91, 211);
+    -webkit-text-stroke: 4px rgb(255, 255, 255);
+    max-width: 80%;
   }
 }
 
@@ -169,13 +154,14 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1.18em 1.18em 1.18em;
+  padding: 1.1em 1.18em 1.18em;
   line-height: 1;
   border-radius: 1em;
   position: relative;
   min-width: 8.23em;
   text-decoration: none;
   font-size: 1.35rem;
+  position: inherit;
 }
 
 #divcaja1,
@@ -204,4 +190,67 @@ body {
   background-image: none;
   background-color: #252e2e;
   color: #f1eded;
+}
+
+/* MENU DESPLEGABLE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+}
+
+/* Estilos para el ícono del Menú */
+.icono-menu {
+  margin: 20px 10px;
+  position: relative;
+  z-index: 100;
+}
+
+.icono-menu img {
+  vertical-align: top;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Estilos para el contenedor del Menú */
+.cont-menu {
+  background-color: rgb(65, 65, 65);
+  box-shadow: 2px 0px 5px 2px rgb(36, 36, 36);
+  border-radius: 0.3em;
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 10;
+  left: 0;
+  transition: all 0.5s ease;
+  opacity: 85%;
+}
+
+/* Estilos por agregar en JavaScript */
+.active {
+  transform: translate(-600px);
+}
+
+/* Estilos para el listado del Menú */
+.cont-menu ul {
+  padding: 30px 0px 0px 0px;
+  list-style: none;
+}
+
+.cont-menu ul li {
+  color: white;
+  display: block;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.cont-menu ul li:hover {
+  background-color: rgb(228, 228, 228);
+  color: rgb(42, 42, 42);
 }
