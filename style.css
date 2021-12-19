@@ -218,8 +218,8 @@ body {
 
 /* Estilos para el contenedor del Menú */
 .cont-menu {
-  background-color: rgb(65, 65, 65);
-  box-shadow: 2px 0px 5px 2px rgb(36, 36, 36);
+  background-color: rgb(140, 0, 255);
+  box-shadow: 2px 0px 5px 2px rgb(60, 1, 87);
   border-radius: 0.3em;
   width: 200px;
   height: auto;
