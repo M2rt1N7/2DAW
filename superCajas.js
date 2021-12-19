@@ -196,7 +196,7 @@ document.getElementById("divcaja4").oncontextmenu = function() {
         
     } else {
         let cabecera = document.getElementById('titulo');
-        cabecera.style.color = 'rgb(0, 91, 211)'
+        cabecera.style.color = 'rgb(140, 0, 255)'
         body.style.backgroundImage = 'url(super.jpg)';
 
     }  
