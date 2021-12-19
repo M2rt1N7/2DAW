@@ -92,6 +92,10 @@ body {
   background-repeat: no-repeat;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @media (max-width: 400px) {
   body {
     background-image: url("super.jpg");
