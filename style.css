@@ -3,10 +3,6 @@
 *:after {
   box-sizing: inherit;
 }
-.wrapper {
-  height: 100%;
-  background-color: white;
-}
 
 .brand-title {
   font-family: Jazz LET, fantasy;
@@ -50,30 +46,6 @@
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding: 1rem;
-}
-
-@media (max-width: 800px) {
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-
-  .navbar-links ul {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .navbar-links ul li {
-    text-align: center;
-  }
-
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
-  }
-
-  .navbar-links.active {
-    display: flex;
-  }
 }
 
 p {
@@ -147,6 +119,30 @@ body {
     -webkit-text-stroke: 4px rgb(255, 255, 255);
     max-width: 100%;
     height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
   }
 }
 
